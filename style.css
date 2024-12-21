@@ -669,177 +669,159 @@ footer span a:hover{
     text-decoration: underline;
 }
 
-/* For screens larger than 1104px */
-
-@media (max-width: 1104px) {
-    .about .about-content .left img {
-        height: 350px;
-        width: 350px;
-    }
-}
-
-/* For screens smaller than or equal to 991px (Tablets and small desktops) */
-@media (max-width: 991px) {
-    .max-width {
-        padding: 0 50px;
-    }
-}
-
-/* For screens smaller than or equal to 947px (Larger phones and smaller tablets) */
-@media (max-width: 947px) {
-    .menu-btn {
-        display: block;
-        z-index: 999;
-    }
-
-    .menu-btn i.active:before {
-        content: "\f00d";
-    }
-
-    .navbar .menu {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-
-    .navbar .menu.active {
-        left: 0;
-    }
-
-    .navbar .menu li {
-        display: block;
-    }
-
-    .navbar .menu li a {
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-
-    .home .home-content .text-2 {
-        font-size: 70px;
-    }
-
-    .home .home-content .text-3 {
-        font-size: 35px;
-    }
-
-    .home .home-content a {
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-
-    .max-width {
-        max-width: 930px;
-    }
-
-    .about .about-content .column {
-        width: 100%;
-    }
-
-    .about .about-content .left {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-
-    .about .about-content .right {
-        flex: 100%;
-    }
-
-    /* Service section fix */
-    .services .serv-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .services .serv-content .card {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-
-    .skills .skills-content .column,
-    .contact .contact-content .column {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-}
-
 /* For screens smaller than or equal to 690px (Small phones) */
 @media (max-width: 690px) {
     .max-width {
-        padding: 0 23px;
+        padding: 0 20px; /* Adjust padding for small screens */
     }
 
+    /* Home Section */
     .home .home-content .text-2 {
-        font-size: 60px;
+        font-size: 50px; /* Decrease font size for better fit */
     }
-
     .home .home-content .text-3 {
-        font-size: 32px;
+        font-size: 32px; /* Smaller font size */
     }
-
     .home .home-content a {
         font-size: 20px;
     }
 
-    /* Service section gap on mobile */
-    .services .serv-content .card {
-        width: 100%;
-        margin-bottom: 15px; /* Adding gap between service boxes */
+    /* About Section */
+    .about .about-content .left img {
+        height: 300px; /* Decrease image size */
+        width: 300px;
     }
 
-    .services .serv-content {
-        padding: 0 10px; /* Adding padding for better spacing */
+    .about .about-content .right {
+        width: 100%; /* Ensure full width on mobile */
+    }
+
+    .about .about-content .right .text {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .about .about-content .right a {
+        font-size: 18px; /* Adjust font size for buttons */
+    }
+
+    /* Services Section */
+    .services .serv-content .card {
+        width: 100%; /* Stack service cards vertically */
+        margin-bottom: 15px;
+    }
+
+    /* Skills Section */
+    .skills .skills-content .column {
+        width: 100%; /* Make skills section full width */
+        margin-bottom: 35px;
+    }
+
+    /* Contact Section */
+    .contact .contact-content .column {
+        width: 100%; /* Full width for columns */
+        margin-bottom: 35px;
+    }
+
+    /* Social Media Icons */
+    .social-media {
+        gap: 10px; /* Reduce gap between social icons */
+    }
+
+    .social-icon {
+        font-size: 20px; /* Adjust icon size */
+        padding: 8px;
     }
 }
 
 /* For screens smaller than or equal to 500px (Very small phones) */
 @media (max-width: 500px) {
     .home .home-content .text-2 {
-        font-size: 50px;
+        font-size: 45px; /* Smaller text for very small screens */
     }
 
     .home .home-content .text-3 {
-        font-size: 27px;
+        font-size: 24px; /* Further reduce font size */
     }
 
-    .about .about-content .right .text,
-    .skills .skills-content .left .text {
-        font-size: 19px;
+    .home .home-content a {
+        font-size: 18px; /* Smaller font size for call to action button */
+        padding: 8px 25px; /* Adjust button padding */
     }
 
-    .contact .right form .fields {
-        flex-direction: column;
+    /* About Section */
+    .about .about-content .left img {
+        height: 250px; /* Decrease image size further */
+        width: 250px;
     }
 
-    .contact .right form .name,
-    .contact .right form .email {
-        margin: 0;
+    /* Navbar and Menu */
+    .navbar .menu li a {
+        font-size: 20px; /* Adjust navbar font size for mobile */
     }
 
-    .right form .error-box {
-        width: 150px;
+    /* Services Section */
+    .services .serv-content .card {
+        width: 100%; /* Stack service cards vertically */
+        margin-bottom: 10px;
     }
 
-    .scroll-up-btn {
-        right: 15px;
-        bottom: 15px;
-        height: 38px;
-        width: 35px;
-        font-size: 23px;
-        line-height: 38px;
+    /* Skills Section */
+    .skills .skills-content .column {
+        width: 100%; /* Ensure skills section takes full width */
+        margin-bottom: 20px;
     }
 
-    /* Adjusting menu button size for smaller phones */
-    .menu-btn {
-        font-size: 30px; /* Ensure touch target is big enough */
+    /* Footer Section */
+    footer {
+        padding: 10px 15px; /* Smaller padding for footer */
+    }
+
+    footer span a {
+        font-size: 14px; /* Adjust link font size */
+    }
+
+    /* Social Media Icons */
+    .social-icon {
+        font-size: 18px; /* Smaller icons for very small screens */
+        padding: 6px;
+    }
+}
+
+/* For screens smaller than or equal to 400px (Extra small phones) */
+@media (max-width: 400px) {
+    .home .home-content .text-2 {
+        font-size: 40px; /* Even smaller text */
+    }
+
+    .home .home-content .text-3 {
+        font-size: 20px; /* Make text even smaller */
+    }
+
+    .home .home-content a {
+        font-size: 16px; /* Adjust button text */
+    }
+
+    .about .about-content .left img {
+        height: 200px; /* Make the image even smaller */
+        width: 200px;
+    }
+
+    .navbar .menu li a {
+        font-size: 18px; /* Further decrease navbar text size */
+    }
+
+    /* Footer Section */
+    footer {
+        padding: 8px 10px; /* Further reduce footer padding */
+    }
+
+    footer span a {
+        font-size: 12px; /* Reduce font size of footer links */
+    }
+
+    /* Social Media Icons */
+    .social-icon {
+        font-size: 16px; /* Decrease icon size for very small screens */
+        padding: 5px;
     }
 }
